@@ -59,7 +59,7 @@ var server = http.createServer(function (request, response) {
           "Content-Type": "text/plain",
         });
         // result of inches = 60
-        result[0].inches = 60;
+        // result[0].inches = 60;
         response.write(JSON.stringify(result));
         response.end();
       });

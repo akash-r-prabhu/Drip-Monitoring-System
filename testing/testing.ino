@@ -30,9 +30,9 @@ void loop() {
       float cm = doc[0]["cm"];
       if (cm > 14.0) {
         digitalWrite(buzzerPin, HIGH);
-        delay(5000);
-        digitalWrite(buzzerPin, LOW);
-        delay(5000);
+      }
+      else{
+        digitalWrite(buzzerPin, LOW);\
       }
       Serial.print("cm: ");
       Serial.println(cm);
