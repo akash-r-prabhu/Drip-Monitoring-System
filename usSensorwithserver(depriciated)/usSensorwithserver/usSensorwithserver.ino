@@ -5,7 +5,7 @@
 const char* ssid = "akash";    // Your Wi-Fi network name (SSID)
 const char* password = "hehehehe"; // Your Wi-Fi network password
 
-const char* serverAddress = "http://192.168.131.201:8001/data"; // Server address with the data endpoint
+const char* serverAddress = "http://192.168.43.201:8001/data"; // Server address with the data endpoint
 
 const int trigPin = 5;
 const int echoPin = 18;
