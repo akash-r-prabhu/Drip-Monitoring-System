@@ -32,15 +32,40 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
   Serial.println(myData.inch);
   Serial.println();
 
- if (myData.cm > 14.0) {
-  Serial.print("Device id " + String(myData.id) + " has Low volume");
+  if(myData.id==1){
+    if (myData.cm > 14.0) {
+      Serial.print("Device id " + String(myData.id) + " has Low volume");
+  if(myData.id==1){
   digitalWrite(15, HIGH);
   delay(1000*5);                       // wait for a second
   digitalWrite(15, LOW);    // turn the LED off by making the voltage LOW
+      
+    }
+    else{
+  digitalWrite(15, LOW); digitalWrite(4, LOW);
+  
 }
-else{
-  digitalWrite(15, LOW);
+  }
+
+  }
+    if(myData.id==2){
+    if (myData.cm > 14.0) {
+      Serial.print("Device id " + String(myData.id) + " has Low volume");
+  if(myData.id==1){
+  digitalWrite(4, HIGH);
+  delay(1000*5);                       // wait for a second
+  digitalWrite(4, LOW);    // turn the LED off by making the voltage LOW
+      
+    }
+    else{
+  digitalWrite(4, LOW); digitalWrite(4, LOW);
+  
 }
+  }
+    }
+  
+
+ 
 
   
 }

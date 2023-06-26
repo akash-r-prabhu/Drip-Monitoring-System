@@ -84,7 +84,7 @@ void loop() {
   distanceInch = distanceCm * CM_TO_INCH;
   
   // Set values to send
-  myData.id=2;
+  myData.id=3;
   myData.cm=distanceCm;
   myData.inch=distanceInch;
   
